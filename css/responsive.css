@@ -1,0 +1,23 @@
+
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .nav-menu.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
