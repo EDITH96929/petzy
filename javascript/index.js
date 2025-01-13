@@ -54,3 +54,28 @@ ScrollReveal().reveal('.home-content h1', {
     ScrollReveal().reveal('.product-item',{
         
     });
+
+
+
+
+    // <-- JavaScript for Form Validation & Animation -->
+
+      $(document).ready(function () {
+        $('#contact-form').on('submit', function (e) {
+          e.preventDefault();
+          
+          const name = $('#name').val().trim();
+          const email = $('#email').val().trim();
+          const message = $('#message').val().trim();
+  
+          // Simple validation
+          if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields.');
+            return;
+          }
+  
+          // Simulate form submission with a success message
+          $('#contact-form')[0].reset();
+          $('#success-message').fadeIn().delay(3000).fadeOut();
+        });
+      });    
