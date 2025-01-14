@@ -25,20 +25,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    /* max-width: 100px; */
     margin: 0 auto;
     padding: 10px 20px;
   }
 
   .logo {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     letter-spacing: 1px;
     font-weight: 800;
     color: #4CAF50;
+    display: flex;
     font-family: "Caveat", cursive;
   }
  .logo img {
     height: 30px;
+    margin-top: 12px;
     padding-left: 3px;
  }
   .nav-menu {
@@ -79,11 +81,11 @@
     border: 1.2px solid #8d8d8d;
     border-radius: 35px;
     padding: 5px;
-    width: 370px;
+    width: 350px;
     background-color: #f8f8f8;
   }
   .fa-magnifying-glass{
-    margin-left: 160px;
+    margin-left: 120px;
   
   }
 
@@ -118,13 +120,13 @@
  .home-section {
    display: flex;
     text-align: center;
-    /* padding: 100px 20px 0; */
     background-color: #9de0f8;
     overflow: hidden;
+    position: relative;
   }
   
   .home-content {
-    z-index: 2;
+    z-index:1;
     position: relative;
     max-width: 700px;
     margin: 0 auto;
@@ -182,15 +184,20 @@
   }
   
   
-  .wave-design {
-    position: absolute;
-    margin-top: 230px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  } 
- 
+.wave-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Adjust the height as needed */
+  height: 100px;
+}
+
+.wave-svg path {
+  fill: #fff;
+  d: M0,100 L0,0 L1000,0 L1000,100 L0,100 Z; /* Adjust the wave shape as needed */
+}
+
 
   /* category section */
   #shop-by-categories {
@@ -215,6 +222,7 @@
     text-align: center;
     margin: 20px;
     width: 120px;
+    
   }
   
   .category-item svg {
@@ -243,29 +251,25 @@
 
   /* product section */
   .promo-section {
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
     background-color: #f8f9fa;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1400px;
-    margin: 0 auto;
-}
-
-.promo-flex {
+    margin:auto;
+  }
+  
+  .promo-flex {
     display: flex;
     gap: 1.5rem;
     overflow-x: auto;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
-}
-
-.promo-flex::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-
-.promo-card {
+  }
+  
+  .promo-card {
     flex: 1;
     min-width: 280px;
     height: 300px;
@@ -278,38 +282,32 @@
     justify-content: space-between;
     color: #333;
     transition: transform 0.3s ease;
-}
-
-.promo-card:hover {
-    transform: translateY(-5px);
-}
-
-.card-1 { background-color: #87CEEB;
-        height: 300px;
-}
-.card-2 { background-color: #FFB6C1; 
-        height: 300px;        
-}
-.card-3 { background-color: #B0C4DE;height:30opx; }
-.card-4 { background-color: #FF9999;height: 300px; }
-
-.card-title {
+    background-color: #fff; /* Add a default background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .card-1 { background-color: #87CEEB; }
+  .card-2 { background-color: #FFB6C1; }
+  .card-3 { background-color: #B0C4DE; }
+  .card-4 { background-color: #FF9999; }
+  
+  .card-title {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
     color: rgba(0, 0, 0, 0.6);
-}
-
-.card-heading {
+  }
+  
+  .card-heading {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     max-width: 80%;
-}
-
-.shop-btn {
+  }
+  
+  .shop-btn {
     display: inline-block;
     background-color: white;
     color: #333;
@@ -324,17 +322,19 @@
     width: fit-content;
     z-index: 2;
     position: relative;
-}
-
-.shop-btn:hover {
+  }
+  
+  .shop-btn:hover {
     transform: translateY(-2px);
-}
-
-.product-image {
-    position: relative;
-    margin-bottom: 100px;
-    
-}
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
 
 @media (max-width: 1200px) {
     .promo-flex {

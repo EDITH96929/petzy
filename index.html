@@ -55,12 +55,10 @@
   
     <!-- wave design--> 
 
-    <div class="wave-design">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
-            <path fill="#81c6e1" fill-opacity="1" d="M0,160 C 120,200 280,100 400,160 C 520,220 680,100 800,160 C 920,220 1080,100 1200,160 C 1320,220 1480,100 1440,160 L1440,320 L0,320 Z"></path>
-        </svg>
-        
-    </div>
+    <svg class="wave-svg top-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+      <path d="M0,100 L50,80 L100,100 L150,70 L200,100 L250,90 L300,100 L350,85 L400,100 L450,75 L500,100 L550,80 L600,100 L650,70 L700,100 L750,90 L800,100 L850,85 L900,100 L950,75 L1000,100 Z" />
+    </svg>
+    
   </section>
 
   <!-- category section -->
@@ -144,46 +142,26 @@
         </div>
     </div>
 </section>
-  
-<section class="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full">
-  <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">Get in Touch with Petzy</h2>
-  <p class="text-center text-gray-600 mb-8">Have questions? We’re happy to help! Reach out via the form below.</p>
-
-  <!-- Contact Form -->
-  <form id="contact-form" class="space-y-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Name Field -->
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" 
-          class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+<section id="contact" class="bg-gray-100 py-16">
+  <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+      <p class="text-lg mb-12">
+          We're here to help! Feel free to contact us for any inquiries or assistance.
+      </p>
+      <div class="flex flex-col space-y-6">
+          <a href="mailto:info@petzyshop.com" class="text-blue-500 hover:underline">
+              <i class="fas fa-envelope mr-2"></i> info@petzyshop.com
+          </a>
+          <a href="tel:+1234567890" class="text-blue-500 hover:underline">
+              <i class="fas fa-phone mr-2"></i> +1 234 567 890
+          </a>
+          <p class="text-gray-500">
+              <i class="fas fa-map-marker-alt mr-2"></i> 123 Main St, Anytown, USA 
+          </p>
       </div>
-      <!-- Email Field -->
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" 
-          class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-      </div>
-    </div>
-
-    <!-- Message Field -->
-    <div>
-      <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-      <textarea id="message" name="message" rows="4" placeholder="Your message..." 
-        class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-    </div>
-
-    <!-- Submit Button -->
-    <button type="submit" 
-      class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Send Message</button>
-  </form>
-
-  <!-- Success Message -->
-  <div id="success-message" class="hidden mt-4 text-green-600 font-medium">
-    Thank you! Your message has been sent successfully.
   </div>
-</section>   
-  
+</section>
+
   </header>
   <script src="https://unpkg.com/scrollreveal"></script>
 
