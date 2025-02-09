@@ -28,7 +28,6 @@ Petzy is a modern and fully responsive pet e-commerce platform designed to conne
   - HTML5  
   - Tailwind CSS  
   - JavaScript  
-  - jQuery for enhanced interactivity
 
 - **Tools & Libraries:**  
   - Vite for fast development setup  
